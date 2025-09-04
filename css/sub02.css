@@ -1,0 +1,345 @@
+@charset "utf-8";
+
+
+/* 상단 스크롤 아이콘 부분입니다. =================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll_top {
+    position: fixed;
+    right: 100px;
+    bottom: 50px;
+    z-index: 1000;
+}
+
+/* header */
+header .nav li.on {
+    color: var(--point);
+}
+
+header .inner .nav li.on::after {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: var(--point);
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    transition: 0.2s;
+}
+
+/* 메인 비주얼 =============================== */
+.sub_bg {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.sub_nav {
+    padding: 120px 0;
+    color: #ccc;
+}
+
+.sub_bg video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.sub_bg .video_dim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    /* 원하는 강도로 */
+    z-index: 1;
+}
+
+.sub_bg .sub_bg_text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+    color: var(--white);
+    z-index: 2;
+}
+
+
+.sub_bg .sub_bg_text h2 {
+    font-size: var(--h1Size);
+    font-weight: var(--h1Weight-6);
+    margin-bottom: 20px;
+    opacity: 0;
+}
+
+
+.sub_bg .sub_bg_text p {
+    font-size: var(--p1Size);
+    font-weight: var(--p1Weight-4);
+    opacity: 0;
+}
+
+
+/* 서브 네비게이션 */
+.sub_nav {
+    padding: 120px 0;
+    color: #ccc;
+}
+
+.sub_nav img {
+    margin-right: 6px;
+}
+
+.sub_nav .inner .home {
+    position: relative;
+    margin-right: 18px;
+}
+
+.sub_nav .inner .home:after {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    content: url('../source/ico_nav_next.png');
+}
+
+.sub_nav .inner span+span {
+    color: #666;
+    font-weight: 500;
+}
+
+/* 탭 */
+.playList { display: none; }
+.playList.on { display: block; }
+
+.playArea .tabMenu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--sectionPadding);
+    border-bottom: 1px solid var(--mainColor);
+}
+
+.playArea .tabMenu li {
+    width: 222px;
+    height: 60px;
+    background: var(--whitegray);
+    font-size: var(--p2Size);
+    font-weight: var(--p2Weight-5);
+    text-align: center;
+    line-height: 60px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.playArea .tabMenu li.on {
+    background: var(--mainColor);
+    color: var(--white);
+}
+
+.playArea .tabMenu li.active {
+    background: var(--mainColor);
+    color: var(--white);
+}
+
+
+/* 컨텐츠 */
+.inner h2 {
+    font-size: var(--h4Size);
+    font-weight: var( --h4Weight-5);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.bg_video{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+
+/* 제주시 ================================== */
+.tabListJeju{
+    position: relative;
+    margin-bottom: 120px;
+}
+.banner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.banner02{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+ .visual {
+    overflow: hidden;
+    width: 900px;
+    height: 420px;
+    border-radius: 30px;
+    position: relative;
+    left: 0;
+}
+.visual > div {
+    position: absolute;       /* 겹쳐서 배치 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;               /* 처음은 투명 */
+    transform: translateX(50px); /* 오른쪽에서 살짝 시작 */
+    transition: all 0.8s ease;  /* 애니메이션 속도 */
+}
+
+.visual > div.active {
+    opacity: 1;               /* 보이게 */
+    transform: translateX(0); /* 제자리로 이동 */
+    z-index: 1;               /* 활성화 이미지를 위로 */
+}
+
+.visual img {
+    width: 100%;
+    height: auto;
+}
+.text_box {
+    width: 480px;
+    height: 420px;
+    
+}
+.text_box > div {
+    display: none;
+}
+.text_box > div.active {
+    display: block;
+}
+.text_box .active li span{
+    color: var(--point);
+    font-size: var(--p1Size);
+    font-weight: var(--p1Weight-7);
+}
+.text_box .active li strong{
+    font-size: var(--h3Size);
+    font-weight: var(--h3Weight-6);
+}
+.text_box .active li {
+    font-size: var(--p2Size);
+    font-weight: var(--p2Weight-5);
+    margin: 20px 0;
+}
+.text_box .active li:last-child {
+    line-height: 1.6;
+}
+
+/* 페이지 번호 + 버튼 영역 */
+.pageNum{
+    position: absolute;
+    bottom: 0; right: 0;
+}
+.pageNum > button img{
+    width: 10px;
+}
+.pageNum > button {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    padding: 0;
+}
+.pageNum>button:hover::before {
+    opacity: 0;
+}
+
+
+
+/* 서귀포시 ================================================= */
+
+.seogwipoWrap{
+    width: 100%;
+    background: #F8FAFE; 
+    padding: 120px 0 120px 0 ;
+}
+ .visual02 {
+    overflow: hidden;
+    width: 920px;
+    height: 450px;
+    border-radius: 30px;
+    position: relative;
+    left: 0;
+}
+.visual02 > div {
+    position: absolute;       /* 겹쳐서 배치 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;               /* 처음은 투명 */
+    transform: translateX(50px); /* 오른쪽에서 살짝 시작 */
+    transition: all 0.8s ease;  /* 애니메이션 속도 */
+}
+
+.visual02 > div.active02 {
+    opacity: 1;               /* 보이게 */
+    transform: translateX(0); /* 제자리로 이동 */
+    z-index: 1;               /* 활성화 이미지를 위로 */
+}
+
+.visual02 img {
+    width: 100%;
+    height: auto;
+}
+.text_box02 {
+    width: 480px;
+    height: 420px;
+}
+.text_box02 > div {
+    display: none;
+}
+.text_box02 > div.active02 {
+    display: block;
+}
+.text_box02 .active02 li span{
+    color: var(--point);
+    font-size: var(--p1Size);
+    font-weight: var(--p1Weight-7);
+}
+.text_box02 .active02 li strong{
+    font-size: var(--h3Size);
+    font-weight: var(--h3Weight-6);
+}
+.text_box02 .active02 li {
+    font-size: var(--p2Size);
+    font-weight: var(--p2Weight-5);
+    margin: 20px 0;
+}
+.text_box02 .active02 li:last-child {
+    line-height: 1.6;
+}
+.tabListSeogwipo{
+    position: relative;
+}
+/* 페이지 번호 + 버튼 영역 */
+.pageNum02 {
+    position: absolute;
+    bottom: 0; left: 0;
+}
+.pageNum02 > button img{
+    width: 10px;
+}
+.pageNum02 > button {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    padding: 0;
+}
+.pageNum02>button:hover::before {
+    opacity: 0;
+}

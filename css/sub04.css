@@ -1,0 +1,876 @@
+@charset "utf-8";
+
+/* 확인용, 복사xxxxxxxxxxxxx */
+.box {
+  height: 1000px;
+}
+
+:root {
+
+  /* COLOR ===================================== */
+  --white: #fff;
+  --white2: rgba(255, 255, 255, 0.7);
+  --black: #000000;
+  --gray: #444444;
+  --whitegray: #eee;
+  --mainColor: #27406E;
+  --point: #FFAA00;
+  --point2: #139600;
+
+  /* 간격 ===================================== */
+  --sectionPadding: 120px;
+  --contentmargin: 60px;
+
+  /* 폰트사이즈 =============================== */
+  --h1Size: 50px;
+  --h1Weight-6: 600;
+  --h2Size: 36px;
+  --h2Weight-6: 600;
+  --h3Size: 32px;
+  --h3Weight-6: 600;
+  --h4Size: 30px;
+  --h4Weight-5: 500;
+  --h5Size: 28px;
+  --h5Weight-5: 500;
+  --h6Size: 26px;
+  --h6Weight-5: 500;
+
+  --p1Size: 24px;
+  --p1Weight-4: 400;
+  --p2Size: 20px;
+  --p2Weight-4: 400;
+  --p3Size: 18px;
+  --p3Weight-3: 300;
+  --p4Size: 16px;
+  --p4Weight-3: 300;
+
+}
+
+/* 상단 스크롤 아이콘 부분입니다. =================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll_top {
+  position: fixed;
+  right: 100px;
+  bottom: 50px;
+  z-index: 1000;
+}
+
+/* 외 공통 부분 ============================== */
+
+/* 이너박스 */
+.inner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+/* 버튼 (참고만 하셔도 되고 사용하셔도 됩니다.) */
+
+button {
+  position: relative;
+  padding: 13px 48px;
+  /* 크기 조정 시 이 값만 조정하시면 돼요 */
+  border: 1px solid var(--black);
+  color: var(--black);
+  border-radius: 1000px;
+  font-size: 16px;
+  opacity: 1;
+  transition: all 0.5s;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 3;
+}
+
+button:hover {
+  border-color: var(--black);
+}
+
+button::before {
+  width: 100%;
+  height: 100%;
+  background: var(--black);
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+button:hover::before {
+  opacity: 1;
+  top: 0;
+}
+
+button:hover span {
+  position: relative;
+  z-index: 3;
+  color: var(--white);
+  font-weight: 600;
+}
+
+
+/* 헤더부분입니다. ================================== */
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: var(--white);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .inner h1 {
+  padding-top: 20px;
+  width: 175px;
+  height: 54px;
+  background: url(../source/img_header_logo_black.png)no-repeat center;
+}
+
+header .inner h1 a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+header .inner .nav {
+  display: flex;
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+header .inner .nav li {
+  line-height: 100px;
+  position: relative;
+  margin-left: 100px;
+  transition: all 0.2s;
+}
+
+header .inner .nav li::after {
+  position: absolute;
+  width: 0;
+  height: 4px;
+  background: var(--point);
+  content: '';
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.2s;
+}
+
+header .inner .nav li:hover {
+  color: var(--point);
+}
+
+header .inner .nav li:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
+header .nav li.on {
+  color: var(--point);
+}
+
+header .inner .nav li.on::after {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: var(--point);
+  content: '';
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+  transition: 0.2s;
+}
+
+/* 메인 비주얼 =============================== */
+
+.sub_bg {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.sub_bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.sub_bg .video_dim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  /* 원하는 강도로 */
+  z-index: 1;
+}
+
+.sub_bg .sub_bg_text {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  text-align: center;
+  color: var(--white);
+  z-index: 2;
+}
+
+
+.sub_bg .sub_bg_text h2 {
+  font-size: var(--h1Size);
+  font-weight: var(--h1Weight-6);
+  margin-bottom: 20px;
+  opacity: 0;
+}
+
+.sub_bg .sub_bg_text p {
+  font-size: var(--p1Size);
+  font-weight: var(--p1Weight-4);
+  opacity: 0;
+}
+
+/* 서브 네비게이션 */
+
+.sub_nav {
+  padding: 120px 0;
+  color: #ccc;
+}
+
+.sub_nav img {
+  margin-right: 6px;
+}
+
+.sub_nav .inner .home {
+  position: relative;
+  margin-right: 18px;
+}
+
+.sub_nav .inner .home:after {
+  position: absolute;
+  top: 0;
+  right: -15px;
+  content: url('../source/ico_nav_next.png');
+}
+
+.sub_nav .inner span+span {
+  color: #666;
+  font-weight: 500;
+}
+
+/* 지역별 맛집 =============================== */
+
+.area_list {
+  padding-bottom: 120px;
+}
+
+.area_list .inner {
+  display: flex;
+  gap: 20px;
+}
+
+.area_list .inner li {
+  flex: 1;
+  font-size: var(--h3Size);
+  font-weight: var(--h3Weight-6);
+  line-height: 1.3;
+  position: relative;
+}
+
+/* .area_list .inner li button {
+  border: none;
+  text-decoration: underline;
+  font-size: var(--p3Size);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+} */
+
+.area_list .inner li button {
+  font-size: var(--p3Size);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px 30px;
+}
+
+.area_list .inner li:first-child p + p {
+  font-size: var(--p2Size);
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.area_list .inner li:first-child {
+  /* background: var(--mainColor); */
+  /* color: #fff; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  border-radius: 15px;
+}
+
+.area_list .inner .list {
+  background: #f5f5f5;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.area_list .inner .list .list_title {
+  width: 100%;
+  height: 76px;
+  background: var(--mainColor);
+  border-radius: 10px;
+  text-align: center;
+  line-height: 76px;
+  color: var(--white);
+}
+
+
+.area_list .inner .list .list_text {
+  padding: 40px 0 40px 34px;
+}
+
+.area_list .inner .list .list_text .list_name {
+  display: flex;
+  align-items: end;
+  margin-bottom: 30px;
+  text-align: center;
+  width: auto;
+}
+
+.area_list .inner .list .list_text .list_name:last-child {
+  margin-bottom: 0;
+}
+
+.area_list .inner .list .list_text .list_name p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-right: 18px;
+}
+
+.area_list .inner .list .list_text .list_name span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* 음식별 맛집 =============================== */
+
+.food_restaurant {
+  /* padding-bottom: 120px; */
+  text-align: center;
+}
+
+.food_restaurant .inner h2 {
+  font-size: var(--h3Size);
+  font-weight: var(--h3Weight-6);
+  margin-bottom: 60px;
+}
+
+.food_restaurant .inner .tag {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.food_restaurant .inner .tag li {
+  flex: 1;
+  border: 1px solid #000;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 100px;
+  font-size: 22px;
+  font-weight: 200;
+  margin-bottom: 60px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.food_restaurant .inner .tag li.on {
+  border-width: 2px;
+  border-color: var(--mainColor);
+  color: var(--white);
+  background: var(--mainColor);
+  cursor: auto;
+}
+
+.food_restaurant .inner .food_list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  display: none;
+}
+
+.food_restaurant .inner .food_list.on {
+  display: flex;
+}
+
+.food_restaurant .inner .food_list .food {
+  width: calc(100%/4 - 15px);
+  text-align: left;
+}
+
+.food_restaurant .inner .food_list .food figure {
+  margin-bottom: 17px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.food_restaurant .inner .food_list .food figure img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.food_restaurant .inner .food_list .food .name_review {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+
+.food_restaurant .inner .food_list .food .name_review p {
+  width: 200px;
+  font-size: var(--p2Size);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.food_restaurant .inner .food_list .food .name_review .review_star {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.review_star span:first-child {
+  width: 16px;
+  height: 16px;
+  background: url(../source/sub04/ico_star1.png)no-repeat center;
+}
+
+.review_star span:nth-child(2) {
+  font-size: 16px;
+  color: var(--mainColor);
+  font-weight: 600;
+}
+
+.review_star span:last-child {
+  font-size: 14px;
+  font-weight: 300;
+  color: #a9a9a9;
+}
+
+.food_restaurant .inner .food_list .food>p {
+  font-size: var(--p4Size);
+  font-weight: 400;
+  color: #464646;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+
+/* 사용자리뷰 맛집 ===================================== */
+
+.review_restaurant {
+  width: 100%;
+  height: 900px;
+  background: url(../source/sub04/img_section03_bg.png) no-repeat center;
+}
+
+.review_restaurant .inner {
+  padding: 145px 0;
+  text-align: center;
+}
+
+.review_restaurant .inner h2 {
+  font-size: var(--h3Size);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.review_restaurant .inner>p {
+  font-size: var(--p2Size);
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.review_restaurant .inner .r_r_list_flex {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 27px;
+}
+
+.review_restaurant .inner .r_r_list_flex .r_r_list {
+  width: calc(100%/2 - 20px);
+  height: 220px;
+  display: flex;
+  text-align: left;
+}
+
+.review_restaurant .inner .r_r_list_flex .r_r_list>a {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  background: var(--white);
+  border-radius: 10px;
+}
+
+.review_restaurant .inner .r_r_list_flex .r_r_list>a figure {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 84%;
+  height: 80%;
+  border-radius: 10px;
+  background: #000;
+  overflow: hidden;
+}
+
+.review_restaurant .inner .r_r_list_flex .r_r_list>a figure img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.review_restaurant .inner .r_r_list_flex .r_r_list .right_text {
+  width: 60%;
+  border-radius: 10px;
+  background: var(--white);
+  border-left: 1px dashed #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px 35px;
+}
+
+.review_restaurant .inner .r_r_list_flex .r_r_list .right_text .r_r_name_area {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 27px;
+}
+
+.review_restaurant .inner .r_r_list_flex .r_r_list .right_text .r_r_name_area p {
+  width: 200px;
+  font-size: var(--p1Size);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.review_restaurant .inner .r_r_list_flex .r_r_list .right_text .r_r_name_area .review_star {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.review_restaurant .inner .r_r_list_flex .r_r_list .right_text .r_r_name_area .review_star span:nth-child(2) {
+  font-weight: 400;
+}
+
+.review_restaurant .inner .r_r_list_flex .r_r_list .right_text .Description {
+  font-size: var(--p4Size);
+  font-weight: 400;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.review_restaurant .inner .r_r_list_flex .r_r_list .right_text .review_text {
+  font-size: var(--p4Size);
+  font-weight: 300;
+  width: 100%;
+  height: 68px;
+  line-height: 1.35;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+}
+
+
+/* 추천 테마 맛집 ============================ */
+
+.recommend {
+  text-align: center;
+  padding: 120px 0;
+  padding-top: 0;
+}
+
+.recommend h2 {
+  font-size: var(--h3Size);
+  font-weight: var(--h3Weight-6);
+  margin-bottom: 10px;
+}
+
+.recommend h2 span {
+  position: relative;
+}
+
+.recommend h2 span::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110%;
+  height: 17px;
+  background: var(--point);
+  z-index: -10;
+}
+
+.recommend > p {
+  font-size: var(--p2Size);
+  font-weight: var(--p2Weight-4);
+}
+
+.recommend .inner {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner .recom {
+  width: calc(100% / 4 - 20px);
+  height: 643px;
+  background: #000;
+  border-radius: 15px;
+  transform: translateY(0);
+  transform: rotate(0);
+  transition: all 0.5s;
+  color: #fff;
+}
+
+.inner .recom.ls1 {
+  background: url(../source/sub04/recommend01.png) no-repeat center/cover;
+}
+
+.inner .recom.ls2 {
+  background: url(../source/sub04/recommend02.png) no-repeat center/cover;
+}
+
+.inner .recom.ls3 {
+  background: url(../source/sub04/recommend03.png) no-repeat center/cover;
+}
+
+.inner .recom.ls4 {
+  background: url(../source/sub04/recommend04.png) no-repeat center/cover;
+}
+
+
+.inner .recom:hover {
+  transform: translateY(-20px);
+  /* transform: rotate(-5deg); */
+}
+
+.inner .recom::before {
+  content: "";
+  position: absolute;
+  opacity: 0.5;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+  transition: opacity 0.5s;
+  border-radius: 15px;
+}
+
+.inner .recom::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  background: #000;
+  opacity: 0.2;
+}
+
+.inner .recom:hover::before {
+   opacity: 1;
+}
+
+.inner .recom .text_box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+}
+
+.inner .recom .text_box .intro {
+  position: absolute;
+  top: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  padding: 0 40px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+.inner .recom .text_box .recom_name {
+  display: flex;
+  align-items: end;
+  margin-bottom: 17px;
+}
+
+.inner .recom .text_box .recom_name > p {
+  font-size: 36px;
+  font-weight: 300;
+  margin-right: 15px;
+}
+
+.inner .recom .text_box .recom_name .recom_star {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.inner .recom .text_box .recom_name .recom_star span:first-child {
+  width: 16px;
+  height: 16px;
+  background: url(../source/sub04/ico_star2.png) no-repeat center;
+}
+
+.inner .recom .text_box .recom_name .recom_star span:nth-child(2){
+  color: var(--point);
+  font-size: var(--p4Size);
+  font-weight: 500;
+}
+
+.inner .recom .text_box .recom_name .recom_star span:nth-child(3) {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.inner .recom .text_box .address {
+  font-size: var(--p3Size);
+  font-weight: 200;
+  margin-bottom: 40px;
+}
+
+.inner .recom .text_box strong {
+  font-size: var(--p4Size);
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.inner .recom .text_box .review_box {
+  width: 100%;
+  height: 160px;
+  transition: all 0.5s;
+}
+
+.inner .recom:hover .text_box .review_box {
+  height: 180px;
+}
+
+.inner .recom .text_box .review_box .review {
+  width: 100%;
+  display: -webkit-box;
+  /* height: 150px; */
+  font-size: var(--p4Size);
+  font-weight: 200;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 6; 
+  -webkit-box-orient: vertical;
+}
+
+
+/* 푸터입니다 ================================ */
+footer {
+  background: var(--black);
+  height: 283px;
+  width: 100%;
+  color: #fff;
+  padding: 60px 0;
+}
+
+footer .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .inner .footer_left>p {
+  font-size: var(--p4Size);
+  font-weight: 200;
+}
+
+footer .inner .footer_left .notice {
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.5;
+}
+
+
+footer .inner .footer_right {
+  width: 30%;
+}
+
+footer .inner .footer_right p {
+  font-size: var(--p4Size);
+  font-weight: 200;
+}
+
+footer .inner .footer_right .tell {
+  font-size: var(--h4Size);
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+footer .inner .footer_right span {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.6;
+  font-weight: 200;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+footer .inner .footer_right .icon_box {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+/* @media (max-width: 1300px) {
+  .food_restaurant .inner .food_list.on {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */

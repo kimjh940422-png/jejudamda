@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제주담다 | 즐거움을 담다</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="source/favicon/favicon2.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub03.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- script -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/sub03.js" defer></script>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <!-- 상단 스크롤 아이콘 -->
+        <div class="scroll_top"><a href="#"><img src="source/scroll_top.png" alt="상단으로"></a></div>
+
+        <!-- 헤더 -->
+        <header>
+            <div class="inner">
+                <h1><a href="index.html"><span class="blind">제주담다로고</span></a></h1>
+                <ul class="nav">
+                    <li><a href="sub01.html">제주이야기</a></li>
+                    <li><a href="sub02.html">자연을 담다</a></li>
+                    <li class="on"><a href="sub03.html">즐거움을 담다</a></li>
+                    <li><a href="sub04.html">맛을 담다</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- 메인 비주얼 ========================= -->
+        <main class="sub_bg">
+            <video muted loop autoplay playsinline preload="auto" class="bg_video">
+                <!-- playsinline preload="auto" 모바일과도 연결되게끔 기입 -->
+                <source src="source/sub03/img_mainBg.mp4" type="video/mp4">
+            </video>
+            <div class="video_dim"></div>
+            <div class="sub_bg_text">
+                <h2>즐거움을 담다</h2>
+                <p>제주에서만 느낄 수 있는 특별한 즐거움을 가득 담았어요.</p>
+            </div>
+        </main>
+
+        <!-- 서브 네비게이션 ===================== -->
+
+        <div class="sub_nav">
+            <div class="inner">
+                <img src="source/ico_home.png" alt="홈으로">
+                <span class="home"><a href="index.html">HOME</a></span>
+                <span><a href="#">즐거움을 담다</a></span>
+            </div>
+        </div>
+
+        <section class="playArea" data-aos="fade-up" data-aos-duration="1600">
+            <h3>제주에서 뭐하고 놀까?</h3>
+            <form action="" class="inputBox">
+                <input type="search" placeholder="검색어를 입력해주세요.">
+                <button type="submit">
+                    <img src="source/sub03/ico_search.png" alt="검색">
+                </button>
+            </form>
+            <ul class="tabMenu">
+                <li class="tab-btn active" data-target="all"><a href="#">전체</a></li>
+                <li class="tab-btn" data-target="jeju"><a href="#">제주시</a></li>
+                <li class="tab-btn" data-target="jejuEast"><a href="#">제주동부</a></li>
+                <li class="tab-btn" data-target="jejuWest"><a href="#">제주서부</a></li>
+                <li class="tab-btn" data-target="seogwipo"><a href="#">서귀포시</a></li>
+            </ul>
+            <div class="inner">
+                <div class="tabList">
+                    <h4 class="tab-btn active" data-target="all">전체보기</h4>
+                    <h4 class="tab-btn" data-target="jeju">제주시</h4>
+                    <h4 class="tab-btn" data-target="jejuEast">제주동부</h4>
+                    <h4 class="tab-btn" data-target="jejuWest">제주서부</h4>
+                    <h4 class="tab-btn" data-target="seogwipo">서귀포시</h4>
+                    <div class="list-wrapper">
+                        <ul class="playList">
+                            <li class="allItem" data-group="jeju">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play01.jpg" alt="노형수퍼마켙" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play01_hover.jpg" alt="노형수퍼마켙" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">노형수퍼마켙</p>
+                                        <p class="playText">
+                                            무한한 차원을 넘나드는 미디어아트의 감동
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuEast">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play02.jpg" alt="에코랜드 테마파크" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play02_hover.jpg" alt="에코랜드 테마파크" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">에코랜드 테마파크</p>
+                                        <p class="playText">
+                                            썸머바캉스 & 워터트레인 시즌2 몬스터를 잡아라
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuWest">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play03.jpg" alt="제주홀릭뮤지엄" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play03_hover.jpg" alt="제주홀릭뮤지엄" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">제주홀릭뮤지엄</p>
+                                        <p class="playText">
+                                            제주의 대표적인 컨텐츠들이 새롭게 재해석된 제주 전시.
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="seogwipo">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play04.jpg" alt="감귤카트" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play04_hover.jpg" alt="감귤카트" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">감귤카트</p>
+                                        <p class="playText">
+                                            감귤카트에서 가슴 벅찬 스피드와 스릴을 만끽하세요.
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="seogwipo">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play05.jpg" alt="런닝맨" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play05_hover.png" alt="런닝맨" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">런닝맨</p>
+                                        <p class="playText">
+                                            런닝맨 멤버가 되어 미션을 완수하라!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuWest">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play06.jpg" alt="소인국 테마파크" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play06_hover.jpg" alt="소인국 테마파크" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">소인국 테마파크</p>
+                                        <p class="playText">
+                                            제주도에서 즐기는 상상속의 세계!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuEast">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play07.jpg" alt="다이나믹메이즈" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play07_hover.jpg" alt="다이나믹메이즈" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">제주 다이나믹메이즈</p>
+                                        <p class="playText">
+                                            예측불가! 짜릿하게 탈출하라!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jeju">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play08.jpg" alt="제주해양레저타운" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play08_hover.jpg" alt="제주해양레저타운" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">제주해양레저타운</p>
+                                        <p class="playText">
+                                            제주에서 안전하고 즐거운 해양레저체험 즐겨보세요!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuWest">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play09.jpg" alt="산방산유람선" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play09_hover.jpg" alt="산방산유람선" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">산방산유람선</p>
+                                        <p class="playText">
+                                            제주도 남쪽해안의 모습을 한눈에 볼 수 있는 최고의 코스로 소중한 추억을 만드세요!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuEast">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play10.jpg" alt="이너리스" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play10_hover.jpg" alt="이너리스" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">이너리스</p>
+                                        <p class="playText">
+                                            제주도 초대형 미디어아트 전시관 '이너리스(innerlith)에서 연인, 가족과 함께 특별한 공간에서 특별한 경험을 해보시기 바랍니다!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jeju">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play11.jpg" alt="제주시티투어버스" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play11_hover.jpg" alt="제주시티투어버스" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">제주시티투어버스</p>
+                                        <p class="playText">
+                                            제주시티투어버스와 함께 제주를 편리하게 한 바퀴
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="seogwipo">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play12.jpg" alt="박물관은 살아있다" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play12_hover.jpg" alt="박물관은 살아있다" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">박물관은 살아있다</p>
+                                        <p class="playText">
+                                            당신이 있어야 완성되는 작품, 상상이 현실이 된다!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jeju">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play13.jpg" alt="본초족욕" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play13_hover.jpg" alt="본초족욕" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">본초족욕</p>
+                                        <p class="playText">
+                                            본초 천연 족욕테라피는 뭉친 근육을 풀어주고 체내의 노폐물을 제거해주며 혈액순환을 원활하게 해줍니다.
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuEast">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play14.jpg" alt="아쿠아플라넷" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play14_hover.jpg" alt="아쿠아플라넷" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">아쿠아플라넷</p>
+                                        <p class="playText">
+                                            제주도 초대형 미디어아트 전시관 '이너리스(innerlith)에서 연인, 가족과 함께 특별한 공간에서 특별한 경험을 해보시기 바랍니다!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuWest">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play15.jpg" alt="신화워터파크" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play15_hover.jpg" alt="신화워터파크" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">신화워터파크</p>
+                                        <p class="playText">
+                                            제주 바다보다 짜릿하고 색다른 물놀이가 시작되는 곳, 신화워터파크
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="seogwipo">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play16.jpg" alt="헬로키티아일랜드" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play16_hover.jpg" alt="헬로키티아일랜드" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">제주 헬로키티아일랜드</p>
+                                        <p class="playText">
+                                            헬로키티 힐링파크에서는 아름다운 자연 속에서 여유로운 여행의 시간을 보낼 수 있습니다.
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="seogwipo">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play17.jpg" alt="서귀포잠수함" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play17_hover.jpg" alt="서귀포잠수함" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">서귀포잠수함</p>
+                                        <p class="playText">
+                                            서귀포잠수함에서만 가능한 신비와 환상을 경험 할 수 있는 수많은 물고기 떼와 진귀한 맨드라미 산호군락
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuWest">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play18.png" alt="신화테마파크" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play18_hover.jpg" alt="신화테마파크" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">신화테마파크</p>
+                                        <p class="playText">
+                                            스릴 넘치는 놀이기구와 즐거운 이벤트가 펼쳐지는 신화테마파크
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuEast">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play19.jpg" alt="우도잠수함" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play19_hover.jpg" alt="우도잠수함" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">우도잠수함</p>
+                                        <p class="playText">
+                                            제주 해양 생태계 보호하며 안전하고 즐거운 해저탐험 선물
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jeju">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play20.jpg" alt="제주요트투어" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play20_hover.jpg" alt="제주요트투어" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">제주요트투어</p>
+                                        <p class="playText">
+                                            제주공항 10분거리 아시아 최대규모 크루즈급 메가요트🛥️
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuWest">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play21.jpg" alt="건강과성 박물관" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play21_hover.jpg" alt="건강과성 박물관" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">건강과성 박물관</p>
+                                        <p class="playText">
+                                            세계각지에서 수집한 수천여점의 유물과 서적을 역사적, 인문학적, 지역별 등 다양한 테마로 전시
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuEast">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play22.jpg" alt="우도선상낚시" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play22_hover.jpg" alt="우도선상낚시" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">우도선상낚시</p>
+                                        <p class="playText">
+                                            내 손으로 잡아서 더 재밌다! 성산&우도 선상낚시는 성산포와 우도 사이를 넘나들며, 배 위에서 즐기는 선상낚시입니다.
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jeju">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play23.jpg" alt="쓩쓩렌탈샵 애월점" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play23_hover.jpg" alt="쓩쓩렌탈샵 애월점" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">쓩쓩렌탈샵 애월점</p>
+                                        <p class="playText">
+                                            제주 애월 전기자전거, 전기스쿠터 렌탈샵입니다.
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="seogwipo">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play24.jpg" alt="실탄사격장" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play24_hover.jpg" alt="실탄사격장" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">실탄사격장</p>
+                                        <p class="playText">
+                                            영화 속 주인공처럼 스릴넘치는 사격!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jeju">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play25.png" alt="쓩쓩렌탈샵 공항점" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play25_hover.jpg" alt="쓩쓩렌탈샵 공항점" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">쓩쓩렌탈샵 공항점</p>
+                                        <p class="playText">
+                                            무지개해안도로와 이호해변을 전기자전거와 전동스쿠터로 풍경을 만끽하며 즐거운 여행으로 초대합니다
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuEast">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play26.jpg" alt="메이즈랜드" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play26_hover.jpg" alt="메이즈랜드" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">메이즈랜드</p>
+                                        <p class="playText">
+                                            미로, 정원, 워킹, 박물관, 먹거리 체험까지! 구석구석 메이즈랜드 즐기기
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuWest">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play27.jpg" alt="뽀로로앤타요 테마파크" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play27_hover.jpg" alt="뽀로로앤타요 테마파크" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">뽀로로앤타요 테마파크</p>
+                                        <p class="playText">
+                                            국내 최대 규모의 캐릭터 어트랙션 테마파크가 제주에 상륙했다!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="seogwipo">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play28.jpg" alt="쇠소깍해양레저타운" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play28_hover.jpg" alt="쇠소깍해양레저타운" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">쇠소깍해양레저타운</p>
+                                        <p class="playText">
+                                            쇠소깍 앞바다에서 기억에 남을 수상레저를 즐겨보세요!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="seogwipo">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play29.jpg" alt="조안베어뮤지엄" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play29_hover.jpg" alt="조안베어뮤지엄" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">조안베어뮤지엄</p>
+                                        <p class="playText">
+                                            전 세계적으로 유명한 테디베어 아티스트 조안 오의 작업실이자, 수백개의 조안테디베어를 만나볼 수 있는 전시공간
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuWest">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play30.jpg" alt="액티브파크" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play30_hover.jpg" alt="액티브파크" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">액티브파크</p>
+                                        <p class="playText">
+                                            다양한 체험 거리가 가득한 액티브파크, 지금 도전해볼까요?
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuEast">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play31.jpg" alt="선녀와나무꾼" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play31_hover.jpg" alt="선녀와나무꾼" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">선녀와나무꾼</p>
+                                        <p class="playText">
+                                            나 어릴 적 향수를 부르는 선녀와나무꾼 테마공원
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jeju">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play32.jpg" alt="플레이박스 VR" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play32_hover.jpg" alt="플레이박스 VR" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">플레이박스 VR</p>
+                                        <p class="playText">
+                                            한시도 눈을 떼지 못할걸요? 세상에 없던 세상을 경험할 수 있는 공간 플레이박스 VR
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuWest">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play33.jpg" alt="산방산탄산온천" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play33_hover.jpg" alt="산방산탄산온천" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">산방산탄산온천</p>
+                                        <p class="playText">
+                                            지하 600m에서 올라오는 국내 최고의 탄산온천!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuEast">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play34.jpg" alt="스카이워터쇼" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play34_hover.jpg" alt="스카이워터쇼" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">스카이워터쇼</p>
+                                        <p class="playText">
+                                            물과 인간, 빛이 하나 되는 무대 위에서 펼쳐지는 퍼포먼스
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jeju">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play35.jpg" alt="더힐링타임" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play35_hover.jpg" alt="더힐링타임" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">더힐링타임</p>
+                                        <p class="playText">
+                                            공항 근처이자 해안에 위치한 제주도 족욕 카페 더 힐링타임!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="seogwipo">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play36.jpg" alt="세계자동차&피아노 박물관" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play36_hover.jpg" alt="세계자동차&피아노 박물관" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">세계자동차&피아노 박물관</p>
+                                        <p class="playText">
+                                            2008년 아시아 최초 개인소장 자동차 박물관 개관에 이어 2019년 한국 최초의 피아노 박물관을 개관
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jeju">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play37.jpg" alt="타이거탱크" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play37_hover.jpg" alt="타이거탱크" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">타이거탱크</p>
+                                        <p class="playText">
+                                            시원 짜릿한 액티비티와 편안한 휴식 공간을 찾고 있다면?
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuEast">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play38.png" alt="일출랜드(미천굴)" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play38_hover.png" alt="일출랜드(미천굴)" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">일출랜드(미천굴)</p>
+                                        <p class="playText">
+                                            반려견 동반이 가능한 식물원입니다.
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuWest">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play39.jpg" alt="마라도정기여객선" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play39_hover.jpg" alt="마라도정기여객선" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">마라도정기여객선</p>
+                                        <p class="playText">
+                                            마라도와 가파도 여행은 운진항(모슬포 남항)에서 직항으로 출발합니다~
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="seogwipo">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play40.jpg" alt="주상절리 제주제트" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play40_hover.jpg" alt="주상절리 제주제트" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">주상절리 제주제트</p>
+                                        <p class="playText">
+                                            주상절리에서 펼쳐지는 수상레져의 모든 것!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="seogwipo">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play41.jpg" alt="아트서커스" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play41_hover.jpg" alt="아트서커스" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">아트서커스</p>
+                                        <p class="playText">
+                                            환상적인 빛의 예술과 음악연출,화려한 안무와 더불어 화려한 아트서커스의 진수!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuWest">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play42.jpg" alt="차귀도선셋유람선" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play42_hover.jpg" alt="차귀도선셋유람선" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">차귀도선셋유람선</p>
+                                        <p class="playText">
+                                            오백장군의 영험한 기운과 차귀도의 노을진 바다 풍경을 감상
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuEast">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play43.jpg" alt="최남단감귤체험농장" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play43_hover.jpg" alt="최남단감귤체험농장" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">최남단감귤체험농장</p>
+                                        <p class="playText">
+                                            가뫼물 농촌생태체험 ,모노레일,숲놀이터,야자수공원,계절에따라 감귤따기체험,블루베리체험이 가능합니다.
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jeju">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play44.jpg" alt="코바다이빙스쿨" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play44_hover.jpg" alt="코바다이빙스쿨" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">코바다이빙스쿨</p>
+                                        <p class="playText">
+                                           다양한 물고기와 산호를 볼 수 있는 바다 속 수중세계를 즐기실수 있는곳 스노클링 과 체험 스쿠버 다이빙을 안전하게 경험해 보세요
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuWest">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play45.jpg" alt="귀덕바다투명카약" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play45_hover.jpg" alt="귀덕바다투명카약" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">귀덕바다투명카약</p>
+                                        <p class="playText">
+                                            투명카약을 타고 잔잔한 포구에서 카약체험 및 포구밖 코스까지~!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuEast">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play46.jpg" alt="제주 레일바이크" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play46_hover.jpg" alt="제주 레일바이크" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">제주 레일바이크</p>
+                                        <p class="playText">
+                                            바람을 가르며 즐기는 제주의 초록풍경!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jeju">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play47.jpg" alt="제주난타" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play47_hover.jpg" alt="제주난타" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">제주난타</p>
+                                        <p class="playText">
+                                            별난 주방에서 발생하는 별난 사건들을 코믹하게 재해석해 타악기와 아크로바틱으로 그려낸 넌버벌 공연을 지금 만나보세요!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="seogwipo">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play48.jpg" alt="무민랜드" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play48_hover.jpg" alt="무민랜드" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">무민랜드</p>
+                                        <p class="playText">
+                                           무민 이야기가 예술로 살아 숨쉬는 감성 공간, 무민랜드 제주으로 여러분을 초대합니다!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jeju">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play49.jpg" alt="한화리조트 제주 테라피센터" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play49_hover.jpg" alt="한화리조트 제주 테라피센터" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">한화리조트 제주 테라피센터</p>
+                                        <p class="playText">
+                                            반신욕(건식) + 헤이베스(조릿대) + 족욕 + 안마베드(세라젬)
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuEast">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play50.jpg" alt="제주 리딩팜 승마클럽&ATV" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play50_hover.jpg" alt="제주 리딩팜 승마클럽&ATV" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">제주 리딩팜 승마클럽&ATV</p>
+                                        <p class="playText">
+                                            제주 최고의 뷰와 한라산을 바라보며 달리는 시원한 하루 어떠세요?
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuWest">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play51.jpg" alt="퐁당제주" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play51_hover.jpg" alt="퐁당제주" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">퐁당제주</p>
+                                        <p class="playText">
+                                            구엄어촌체험마을 '퐁당해양레저'로 어촌체험휴양 오세요!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="seogwipo">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play52.jpg" alt="퍼시픽 마리나 요트투어" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play52_hover.jpg" alt="퍼시픽 마리나 요트투어" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">퍼시픽 마리나 요트투어</p>
+                                        <p class="playText">
+                                            바다 한가운데서 보는 선셋과 선라이즈가 감동을 선사합니다
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="seogwipo">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play53.jpg" alt="제주참숯가마 찜질방" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play53_hover.jpg" alt="제주참숯가마 찜질방" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">제주참숯가마 찜질방</p>
+                                        <p class="playText">
+                                            일상의 피로함과 제주여행에서의 여독을 이 곳에서 잠시 놓고 가면 어떠실까요?
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuWest">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play54.jpg" alt="차귀배낚시 한경3호" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play54_hover.jpg" alt="차귀배낚시 한경3호" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">차귀배낚시 한경3호</p>
+                                        <p class="playText">
+                                            신비로운 바다를 경험할 수 있는, 차귀배낚시한경3호로 놀러오세요
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuEast">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play55.jpg" alt="길갈 팜 랜드" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play55_hover.jpg" alt="길갈 팜 랜드" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">길갈 팜 랜드</p>
+                                        <p class="playText">
+                                            성장하는 모든 것들이 조화롭게 살아가는 낙원의 모습을 상상하며 만들었습니다
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuEast">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play56.jpg" alt="목장카페 밭디" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play56_hover.jpg" alt="목장카페 밭디" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">목장카페 밭디</p>
+                                        <p class="playText">
+                                           밭디에서는 카페,승마체험,이색자전거 체험,말 먹이주기 체험,넓은 산책로 등 다양한 컨텐츠를 즐길 수 있습니다.
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="jejuWest">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play57.jpg" alt="유리바닥보트" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play57_hover.jpg" alt="유리바닥보트" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">유리바닥보트</p>
+                                        <p class="playText">
+                                            세상에 없던 새로운 체험형 보트투어 유리바닥보트
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="allItem" data-group="seogwipo">
+                                <a href="">
+                                    <figure>
+                                        <!-- 기본이미지 -->
+                                        <img src="source/sub03/img_play58.jpg" alt="서귀포유람선" class="defaultImg">
+                                        <!-- hover img -->
+                                        <img src="source/sub03/img_play58_hover.jpg" alt="서귀포유람선" class="hoverImg">
+                                    </figure>
+                                    <div class="playTextBox">
+                                        <p class="playTitle">서귀포유람선</p>
+                                        <p class="playText">
+                                            서귀포 해안 절경과 비경을 한 눈에 볼 수 있는 서귀포 유람선!
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="btn-more"><span>더 보기</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flexArea" data-aos="fade-up" data-aos-duration="1600">
+            <div class="inner">
+                <img src="source/sub03/img_flexBg02.png" alt="돌고래">
+                <div class="sliderLeft">
+                    <h3>제주 패키지<br>FLEX!</h3>
+                    <p class="sliderText">제주에서만 즐길 수 있는<br>액티비티부터 감성 가득 체험까지,<br>알차게 구성된 패키지로<br>시간은 아끼고 즐거움은 두
+                        배로!<br>인기 체험을 하나하나 고를 필요
+                        없이,<br>FLEX하게 한 번에 즐겨보세요.</p>
+                    <img src="source/sub03/img_flexBg03.png" alt="게임머니">
+                </div>
+            </div>
+            <!-- Swiper -->
+            <div class="sliderRight">
+                <div class="swiper flexSwiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a class="VideoDim" href="">
+                                <video src="source/sub03/vid_flex01.mp4" muted autoplay loop></video>
+                                <div class="hoverText">
+                                    <h4>제주홀릭뮤지엄<br>+<br>건강과성박물관</h4>
+                                    <button class="btn-more"><span>상세보기</span></button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a class="VideoDim" href="">
+                                <img src="source/sub03/img_flex02.png" alt=""></img>
+                                <div class="hoverText">
+                                    <h4>에코랜드 테마파크<br>+<br>에코랜드 호텔 중식 이용권</h4>
+                                    <button class="btn-more"><span>상세보기</span></button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a class="VideoDim" href="">
+                                <img src="source/sub03/img_flex03.png" alt=""></img>
+                                <div class="hoverText">
+                                    <h4>김녕깡통열차<br>+<br>메이즈랜드</h4>
+                                    <button class="btn-more"><span>상세보기</span></button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a class="VideoDim" href="">
+                                <img src="source/sub03/img_flex04.png" alt=""></img>
+                                <div class="hoverText">
+                                    <h4>선녀와나무꾼<br>+<br>교복대여</h4>
+                                    <button class="btn-more"><span>상세보기</span></button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a class="VideoDim" href="">
+                                <img src="source/sub03/img_flex05.png" alt=""></img>
+                                <div class="hoverText">
+                                    <h4>제주 리딩팜 승마(10분)<br>+<br>ATV 세미코스</h4>
+                                    <button><span>상세보기</span></button>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 푸터 -->
+        <footer>
+            <div class="inner">
+                <div class="footer_left">
+                    <img src="source/img_footer_logo.png" alt="로고">
+                    <p>제주 여행의 모든 것을 한곳에 담다</p>
+                    <p class="notice">© 2025 제주담다. All rights reserved. <br>
+                        ※ 본 프로젝트에 사용된 브랜드, 이미지 외 저작권이 있는 모든 요소들은 원저작권자에게 귀속됩니다.
+                    </p>
+                </div>
+                <div class="footer_right">
+                    <p>제주관광정보센터 TEL </p>
+                    <p class="tell">(064)740-6000</p>
+                    <span>평일 09:00~18:00 (토·일요일, 공휴일 휴무)</span>
+                    <div class="icon_box">
+                        <a href="https://www.instagram.com/visitjeju.kr/#" target="_blank"><img
+                                src="source/ico_footer01.png" alt="인스타"></a>
+                        <a href="https://www.youtube.com/c/visitjeju" target="_blank"><img src="source/ico_footer02.png"
+                                alt="유튜브"></a>
+                        <a href="https://www.facebook.com/visitjeju.kr" target="_blank"><img
+                                src="source/ico_footer03.png" alt="페이스북"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </div>
+
+</body>
+
+</html>

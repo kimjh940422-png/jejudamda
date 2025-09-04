@@ -1,0 +1,402 @@
+@charset "utf-8";
+
+/* 상단 스크롤 아이콘 부분입니다. =================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll_top {
+    position: fixed;
+    right: 100px;
+    bottom: 50px;
+    z-index: 1000;
+}
+
+/* header */
+header .nav li.on {
+    color: var(--point);
+}
+
+header .inner .nav li.on::after {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: var(--point);
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    transition: 0.2s;
+}
+
+/* 메인 비주얼 =============================== */
+.sub_bg {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.sub_bg video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.sub_bg .video_dim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    /* 원하는 강도로 */
+    z-index: 1;
+}
+
+.sub_bg .sub_bg_text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+    color: var(--white);
+    z-index: 2;
+}
+
+.sub_bg .sub_bg_text h2 {
+    font-size: var(--h1Size);
+    font-weight: var(--h1Weight-6);
+    margin-bottom: 20px;
+    opacity: 0;
+}
+
+.sub_bg .sub_bg_text p {
+    font-size: var(--p1Size);
+    font-weight: var(--p1Weight-4);
+    opacity: 0;
+}
+
+/* 서브 네비게이션 */
+.sub_nav {
+    padding: 120px 0;
+    color: #ccc;
+}
+
+.sub_nav img {
+    margin-right: 6px;
+}
+
+.sub_nav .inner .home {
+    position: relative;
+    margin-right: 18px;
+}
+
+.sub_nav .inner .home:after {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    content: url('../source/ico_nav_next.png');
+}
+
+.sub_nav .inner span+span {
+    color: #666;
+    font-weight: 500;
+}
+
+/* playArea */
+.playArea {
+    width: 100%;
+    margin: 0 auto 120px;
+}
+
+.playArea h3 {
+    font-size: var(--h3Size);
+    font-weight: var(--h3Weight-6);
+    text-align: center;
+    margin-bottom: var(--contentmargin);
+}
+
+.playArea .inputBox {
+    position: relative;
+    margin-bottom: var(--contentmargin);
+}
+
+.playArea .inputBox input[type="search"] {
+    margin: 0 auto;
+    width: 800px;
+    height: 60px;
+    border: 3px solid var(--whitegray);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px 0 20px;
+    font-size: var(--p3Size);
+    font-weight: var(--p3Weight-3);
+    line-height: 60px;
+}
+
+.playArea .inputBox>button {
+    position: absolute;
+    right: 31%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+}
+
+.playArea .inputBox>button:hover::before {
+    opacity: 0;
+}
+
+.playArea .tabMenu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--sectionPadding);
+    border-bottom: 1px solid var(--mainColor);
+}
+
+.playArea .tabMenu li {
+    width: 222px;
+    height: 60px;
+    background: var(--whitegray);
+    font-size: var(--p2Size);
+    font-weight: var(--p1Weight-4);
+    text-align: center;
+    line-height: 60px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.playArea .tabMenu li.active {
+    background: var(--mainColor);
+    color: var(--white);
+}
+
+.playArea .tabList {
+    position: relative;
+}
+
+.playArea .tabList h4 {
+    font-size: var(--h4Size);
+    font-weight: var(--h4Weight-5);
+    text-align: center;
+    margin-bottom: var(--contentmargin);
+}
+
+.tabList h4 {
+    display: none;
+    /* 기본적으로 숨김 */
+}
+
+.tabList h4.active {
+    display: block;
+    /* 선택된 제목만 보이게 */
+}
+
+.tabList .list-wrapper{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 카드 5개씩 1줄 */
+    gap: 20px;
+    max-height: calc(400px * 4 + 20px * 3);
+    /* 카드 높이 × 4줄 + 줄 간격 */
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.tabList .list-wrapper.expanded {
+    max-height: 9999px;
+    /* 더보기 누르면 전체 오픈 */
+}
+
+.tabList .btn-more {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.playArea .tabList .playList {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.playArea .tabList .playList li figure {
+    position: relative;
+    width: 272px;
+    height: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/* 두 이미지를 겹치게 배치 */
+.playArea .tabList .playList li figure img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    transition: opacity 0.4s ease;
+    /* 부드럽게 전환 */
+}
+
+/* hover 이미지는 기본적으로 안 보이게 */
+.playArea .tabList .playList li figure .hoverImg {
+    opacity: 0;
+}
+
+/* hover 상태일 때 전환 */
+.playArea .tabList .playList li figure:hover .defaultImg {
+    opacity: 0;
+}
+
+.playArea .tabList .playList li figure:hover .hoverImg {
+    opacity: 1;
+}
+
+.playArea .tabList .playList .playTextBox {
+    width: 272px;
+    padding: 20px 20px 30px;
+}
+
+.playArea .tabList .playList .playTextBox .playTitle {
+    font-size: var(--p2Size);
+    font-weight: var(--p2Weight-4);
+    margin-bottom: 5px;
+}
+
+.playArea .tabList .playList .playTextBox .playText {
+    font-size: var(--p4Size);
+    font-weight: var(--p4Weight-3);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--gray);
+}
+
+/* flexArea */
+.flexArea {
+    position: relative;
+    width: 100%;
+    height: 1005px;
+    background: url(../source/sub03/img_flexBg01.png) no-repeat center/cover;
+}
+
+.flexArea>div {
+    position: relative;
+    top: 30%;
+    max-width: 1440px;
+}
+
+.flexArea>div>img {
+    position: absolute;
+    top: -350px;
+    right: 0;
+}
+
+.flexArea > div .sliderLeft {
+    flex: 0 0 400px;
+    height: 500px;
+    z-index: 2;
+}
+
+.sliderLeft h3 {
+    font-size: var(--h3Size);
+    font-weight: var(--h3Weight-6);
+    color: var(--point);
+    margin-bottom: var(--contentmargin);
+}
+
+.sliderLeft>p {
+    font-size: var(--p4Size);
+    font-weight: var(--p4Weight-3);
+    color: var(--white);
+    line-height: 1.6;
+}
+.sliderLeft>img {
+    position: absolute;
+    bottom: 0; left: 10%;
+}
+.flexArea .sliderRight {
+    position: absolute;
+    top: 30%; right: 0;
+    width: calc(100% - 600px - 20px); height: 500px;
+}
+.swiper-slide {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-slide img,
+.swiper-slide video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sliderRight .swiper-slide {
+    position: relative;
+    width: 345px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.sliderRight .swiper-slide video {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+}
+.sliderRight .flexSwiper .swiper-slide .hoverText {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    /* dim 효과 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    /* 기본 숨김 */
+    color: #fff;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+.sliderRight .flexSwiper .swiper-slide:hover .hoverText {
+    opacity: 1;
+    /* hover 시 나타남 */
+}
+.sliderRight .flexSwiper .swiper-slide .hoverText h4 {
+    font-size: var(--h5Size);
+    font-weight: var(--h5Weight-5);
+    margin-bottom: 30px;
+}
+.sliderRight .flexSwiper .swiper-slide:hover .hoverText button {
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.sliderRight .flexSwiper .swiper-slide:hover .hoverText button:hover {
+    border-color: var(--white);
+    color: var(--black);
+}
+.sliderRight .flexSwiper .swiper-slide:hover .hoverText button::before {
+    background: var(--white);
+}
+.sliderRight .flexSwiper .swiper-slide:hover .hoverText button:hover span {
+  color: var(--black);
+  font-weight: var(--h4Weight-5);
+}

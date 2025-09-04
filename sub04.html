@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제주담다 | 맛을 담다</title>
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="source/favicon/favicon2.png">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/sub04.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- js -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/sub04.js" defer></script>
+
+  <!-- aos js -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <!-- 상단 스크롤 아이콘 -->
+    <div class="scroll_top"><a href="#"><img src="source/scroll_top.png" alt="상단으로"></a></div>
+
+    <!-- 헤더 -->
+    <header>
+      <div class="inner">
+        <h1><a href="index.html"><span class="blind">제주담다로고</span></a></h1>
+        <ul class="nav">
+          <li><a href="sub01.html" target="_blank">제주이야기</a></li>
+          <li><a href="sub02.html" target="_blank">자연을 담다</a></li>
+          <li><a href="sub03.html" target="_blank">즐거움을 담다</a></li>
+          <li class="on"><a href="#">맛을 담다</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- 메인 비주얼 ========================= -->
+    <div class="sub_bg">
+      <video muted loop autoplay class="bg_video">
+        <source src="source/sub04/vid_sub04_mainBG.mp4" type="video/mp4">
+      </video>
+      <div class="video_dim"></div>
+      <div class="sub_bg_text">
+        <h2>제주, 맛을 담다</h2>
+        <p>제주담다와 함께 제주의 특별한 맛을 담아보세요!</p>
+      </div>
+    </div>
+
+    <!-- 서브 네비게이션 ===================== -->
+
+    <div class="sub_nav">
+      <div class="inner">
+        <a href="index.html"><img src="source/ico_home.png" alt="홈으로"></a>
+        <span class="home"><a href="index.html">HOME</a></span>
+        <span>맛을 담다</span>
+      </div>
+    </div>
+
+
+    <!-- 지역별 맛집 ======================== -->
+
+    <section class="area_list">
+      <ul class="inner">
+        <li>
+          <p data-aos="fade-up" data-aos-duration="1600">지역별 맛집 찾아보기</p>
+        <p data-aos="fade-up" data-aos-duration="1600" data-aos-delay="200">지역별로 제주시 내 맛집을 <br>찾아보아요!</p>
+        <button data-aos="fade-up" data-aos-duration="1600" data-aos-delay="400"><span>지역별 맛집 더보기 +</span></button>
+      </li>
+        
+
+        <li class="list" data-aos="fade-up" data-aos-duration="1600" >
+          <a href="#">
+            <div class="list_title">제주시 권역 (북부)</div>
+          </a>
+          <div class="list_text">
+            <div class="list_name">
+              <p>제주시내</p>
+              <span>연동, 노형, 이도, 삼도 등</span>
+            </div>
+            <div class="list_name">
+              <p>애월</p>
+              <span>곽지, 한담, 협재 포함</span>
+            </div>
+            <div class="list_name">
+              <p>한림</p>
+              <span>협재해수욕장, 금능해변 인근</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="list" data-aos="fade-up" data-aos-duration="1600" >
+          <a href="#">
+            <div class="list_title">서귀포시 권역 (남부)</div>
+          </a>
+          <div class="list_text">
+            <div class="list_name">
+              <p>서귀포시내</p>
+              <span>서귀동, 동홍동 등</span>
+            </div>
+            <div class="list_name">
+              <p>중문</p>
+              <span>중문관광단지, 색달 포함</span>
+            </div>
+            <div class="list_name">
+              <p>안덕</p>
+              <span>산방산, 화순, 대평 포함</span>
+            </div>
+            <div class="list_name">
+              <p>남원</p>
+              <span>표선 포함</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="list" data-aos="fade-up" data-aos-duration="1600" >
+          <a href="#">
+            <div class="list_title">동부 & 동북부 해안 권역</div>
+          </a>
+          <div class="list_text">
+            <div class="list_name">
+              <p>성산</p>
+              <span>섭지코지, 성산일출봉 인근</span>
+            </div>
+            <div class="list_name">
+              <p>표선</p>
+              <span>해비치, 해변 카페 거리 등</span>
+            </div>
+            <div class="list_name">
+              <p>구좌</p>
+              <span>세화, 월정리, 평대 등 핫한 해변 라인</span>
+            </div>
+            <div class="list_name">
+              <p>조천</p>
+              <span>함덕, 신촌, 김녕</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 음식별 맛집 =============================== -->
+
+    <section class="food_restaurant">
+      <div class="inner">
+        <h2 data-aos="fade-up" data-aos-duration="1600">음식 카테고리별 맛집</h2>
+        <!-- <p>음식 종류별로 제주의 특별한 맛을 만나보세요!</p> -->
+        <ul class="tag" data-aos="fade-up" data-aos-duration="1600">
+          <li class="on">흑돼지 맛집</li>
+          <li>해산물 맛집</li>
+          <li>제주 국수</li>
+          <li>채식맛집</li>
+          <li>디저트 & 카페</li>
+          <li>가성비 맛집</li>
+        </ul>
+
+        <!-- 흑돼지 01 -->
+        <div class="food_list on" data-aos="fade-up" data-aos-duration="1600">
+          <div class="food">
+            <figure><a href="#"><img src="source/sub04/restaurant/pig01.png" alt="천짓골식당"></a></figure>
+            <div class="name_review">
+              <p>천짓골식당</p>
+              <div class="review_star"><span></span> <span>4.6</span> <span>(2,132)</span></div>
+            </div>
+            <p>부드러운 돔베고기 맛집</p>
+          </div>
+
+          <div class="food">
+            <figure><a href="#"><img src="source/sub04/restaurant/pig02.png" alt="저팔계 깡통연탄구이"></a></figure>
+            <div class="name_review">
+              <p>저팔계 깡통연탄구이</p>
+              <div class="review_star"><span></span> <span>4.6</span> <span>(21)</span></div>
+            </div>
+            <p>함덕 해수욕장 근처의 제주 흑돼지 맛집</p>
+          </div>
+
+          <div class="food">
+            <figure><a href="#"><img src="source/sub04/restaurant/pig03.png" alt="양대감"></a></figure>
+            <div class="name_review">
+              <p>양대감</p>
+              <div class="review_star"><span></span> <span>4.3</span> <span>(86)</span></div>
+            </div>
+            <p>노형동 흑돼지 맛집</p>
+          </div>
+
+          <div class="food">
+            <figure><a href="#"><img src="source/sub04/restaurant/pig04.png" alt="칠돈가"></a></figure>
+            <div class="name_review">
+              <p>칠돈가</p>
+              <div class="review_star"><span></span> <span>4.3</span> <span>(52)</span></div>
+            </div>
+            <p>흑돼지 연탄구이 맛집</p>
+          </div>
+        </div>
+
+
+        <!-- 해산물 02 -->
+        <div class="food_list">
+          <div class="food">
+            <figure><a href="#"><img src="source/sub04/restaurant/fish01.png" alt="고집돌우럭 함덕점"></a></figure>
+            <div class="name_review">
+              <p>고집돌우럭 함덕점</p>
+              <div class="review_star"><span></span> <span>4.6</span> <span>(4,424)</span></div>
+            </div>
+            <p>건강한 식단과 제주의 보양식인 우럭조림</p>
+          </div>
+
+          <div class="food">
+            <figure><a href="#"><img src="source/sub04/restaurant/fish05.png" alt="쌍둥이횟집 본점"></a></figure>
+            <div class="name_review">
+              <p>쌍둥이횟집 본점</p>
+              <div class="review_star"><span></span> <span>4.8</span> <span>(4,182)</span></div>
+            </div>
+            <p>가성비 해산물 요리 전문점</p>
+          </div>
+
+          <div class="food">
+            <figure><a href="#"><img src="source/sub04/restaurant/fish06.png" alt="소금바치 순이네"></a></figure>
+            <div class="name_review">
+              <p>소금바치 순이네</p>
+              <div class="review_star"><span></span> <span>4.8</span> <span>(1,555)</span></div>
+            </div>
+            <p>제주 동부 해산물 요리 전문식당</p>
+          </div>
+
+          <div class="food">
+            <figure><a href="#"><img src="source/sub04/restaurant/fish02.png" alt="노도고등어회"></a></figure>
+            <div class="name_review">
+              <p>노도고등어회</p>
+              <div class="review_star"><span></span> <span>4.8</span> <span>(263)</span></div>
+            </div>
+            <p>제주 공항 해산물 요리 전문식당</p>
+          </div>
+
+          <div class="food">
+            <figure><a href="#"><img src="source/sub04/restaurant/fish03.png" alt="갈치공장"></a></figure>
+            <div class="name_review">
+              <p>갈치공장</p>
+              <div class="review_star"><span></span> <span>4.6</span> <span>(943)</span></div>
+            </div>
+            <p>구좌읍 갈치조림 맛집</p>
+          </div>
+
+          <div class="food">
+            <figure><a href="#"><img src="source/sub04/restaurant/fish04.png" alt="명진전복"></a></figure>
+            <div class="name_review">
+              <p>명진전복</p>
+              <div class="review_star"><span></span> <span>4.1</span> <span>(5,126)</span></div>
+            </div>
+            <p>구좌읍 전복돌솥밥 맛집</p>
+          </div>
+        </div>
+
+        <!-- 제주국수 03 -->
+        <div class="food_list">
+          <div class="food">
+            <figure><a href="#"><img src="source/sub04/restaurant/noodle01.png" alt="모던돔베"></a></figure>
+            <div class="name_review">
+              <p>모던돔베</p>
+              <div class="review_star"><span></span> <span>4.7</span> <span>(567)</span></div>
+            </div>
+            <p>제주시 분위기 좋은 고기국수 맛집</p>
+          </div>
+
+          <div class="food">
+            <figure><img src="source/sub04/restaurant/noodle02.png" alt="언덕집국수"></figure>
+            <div class="name_review">
+              <p>언덕집국수</p>
+              <div class="review_star"><span></span> <span>4.9</span> <span>(1,103)</span></div>
+            </div>
+            <p>애월 고기 국수 맛집</p>
+          </div>
+
+          <div class="food">
+            <figure><img src="source/sub04/restaurant/noodle03.png" alt="자매국수"></figure>
+            <div class="name_review">
+              <p>자매국수</p>
+              <div class="review_star"><span></span> <span>3.9</span> <span>(7,989)</span></div>
+            </div>
+            <p>제주시 대중적인 고기국수 맛집</p>
+          </div>
+
+          <div class="food">
+            <figure><img src="source/sub04/restaurant/noodle04.png" alt="중문수두리보말칼국수"></figure>
+            <div class="name_review">
+              <p>중문수두리보말칼국수</p>
+              <div class="review_star"><span></span> <span>4.1</span> <span>(1,836)</span></div>
+            </div>
+            <p>구좌읍 전복돌솥밥 맛집</p>
+          </div>
+
+          <div class="food">
+            <figure><img src="source/sub04/restaurant/noodle05.png" alt="소길국수"></figure>
+            <div class="name_review">
+              <p>소길국수</p>
+              <div class="review_star"><span></span> <span>5.0</span> <span>(275)</span></div>
+            </div>
+            <p>제주공항 근처 고기국수 맛집</p>
+          </div>
+        </div>
+
+
+        <!-- 비건 04 -->
+        <div class="food_list">
+          <div class="food">
+            <figure><img src="source/sub04/restaurant/Vegan01.png" alt="제주 베지스"></figure>
+            <div class="name_review">
+              <p>제주 베지스</p>
+              <div class="review_star"><span></span> <span>5.0</span> <span>(128)</span></div>
+            </div>
+            <p>한경면 비건 레스토랑</p>
+          </div>
+
+          <div class="food">
+            <figure><img src="source/sub04/restaurant/Vegan02.png" alt="제주901, 카페"></figure>
+            <div class="name_review">
+              <p>제주901, 카페</p>
+              <div class="review_star"><span></span> <span>4.6</span> <span>(153)</span></div>
+            </div>
+            <p>제주 노형 맛있는 비건 카페</p>
+          </div>
+
+          <div class="food">
+            <figure><img src="source/sub04/restaurant/Vegan03.png" alt="채식식당 푸른솔맑은향"></figure>
+            <div class="name_review">
+              <p>채식식당 푸른솔맑은향</p>
+              <div class="review_star"><span></span> <span>4.5</span> <span>(102)</span></div>
+            </div>
+            <p>노형동 비건 식당</p>
+          </div>
+
+          <div class="food">
+            <figure><img src="source/sub04/restaurant/Vegan04.png" alt="작은부엌"></figure>
+            <div class="name_review">
+              <p>작은부엌</p>
+              <div class="review_star"><span></span> <span>4.7</span> <span>(37)</span></div>
+            </div>
+            <p>조천읍 채식 전문 식당</p>
+          </div>
+        </div>
+
+
+        <!-- 디저트&카페 05 -->
+        <div class="food_list">
+          <div class="food">
+            <figure><img src="source/sub04/restaurant/Dessert01.png" alt="블랑로쉐"></figure>
+            <div class="name_review">
+              <p>블랑로쉐</p>
+              <div class="review_star"><span></span> <span>4.2</span> <span>(952)</span></div>
+            </div>
+            <p>제주 우도 바다풍경 감성 커피숍</p>
+          </div>
+
+          <div class="food">
+            <figure><img src="source/sub04/restaurant/Dessert02.png" alt="카페 델문도 함덕점"></figure>
+            <div class="name_review">
+              <p>카페 델문도 함덕점</p>
+              <div class="review_star"><span></span> <span>4.1</span> <span>(4,685)</span></div>
+            </div>
+            <p>함덕 해주욕상 풍경 좋은 디저트 맛집</p>
+          </div>
+
+          <div class="food">
+            <figure><img src="source/sub04/restaurant/Dessert03.png" alt="충무상회"></figure>
+            <div class="name_review">
+              <p>충무상회</p>
+              <div class="review_star"><span></span> <span>5.0</span> <span>(922)</span></div>
+            </div>
+            <p>제주 동문시장 찰리공장 감성 디저트 전문점</p>
+          </div>
+
+          <div class="food">
+            <figure><img src="source/sub04/restaurant/Dessert04.png" alt="울트라마린"></figure>
+            <div class="name_review">
+              <p>울트라마린</p>
+              <div class="review_star"><span></span> <span>4.5</span> <span>(939)</span></div>
+            </div>
+            <p>한경면 분위기 좋은 디저트 맛집</p>
+          </div>
+        </div>
+
+
+        <!-- 가성비 06 -->
+        <div class="food_list">
+          <div class="food">
+            <figure><img src="source/sub04/restaurant/Price02.png" alt="화순한가네식당"></figure>
+            <div class="name_review">
+              <p>화순한가네식당</p>
+              <div class="review_star"><span></span> <span>4.6</span> <span>(284)</span></div>
+            </div>
+            <p>서귀포시 가성비 돔베 맛집</p>
+          </div>
+
+          <div class="food">
+            <figure><img src="source/sub04/restaurant/Price03.png" alt="용담생국수"></figure>
+            <div class="name_review">
+              <p>용담생국수</p>
+              <div class="review_star"><span></span> <span>4.3</span> <span>(131)</span></div>
+            </div>
+            <p>제주시 가성비 고기국수 맛집</p>
+          </div>
+
+          <div class="food">
+            <figure><img src="source/sub04/restaurant/Price04.png" alt="돼지구이연구소"></figure>
+            <div class="name_review">
+              <p>돼지구이연구소</p>
+              <div class="review_star"><span></span> <span>4.5</span> <span>(255)</span></div>
+            </div>
+            <p>제주시 김치찌개, 제육 가성비 맛집</p>
+          </div>
+
+          <div class="food">
+            <figure><img src="source/sub04/restaurant/Price01.png" alt="나라돈까스"></figure>
+            <div class="name_review">
+              <p>나라돈까스</p>
+              <div class="review_star"><span></span> <span>4.2</span> <span>(452)</span></div>
+            </div>
+            <p>제주시 돈까스 가성비 맛집</p>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <!-- 사용자 리뷰 맛집 ========================== -->
+
+    <section class="review_restaurant">
+      <div class="inner">
+        <h2 data-aos="fade-up" data-aos-duration="1600">사용자 리뷰 맛집</h2>
+        <p data-aos="fade-up" data-aos-duration="1600" data-aos-delay="200">별점 4.5이상, 후기 500개 이상의 찐 맛집만 모아봤어요</p>
+
+        <div class="r_r_list_flex">
+
+          <div class="r_r_list" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="100">
+            <a href="#">
+              <figure><img src="source/sub04/review01.png" alt="꺼멍식당"></figure>
+            </a>
+            <div class="right_text">
+              <div class="r_r_name_area">
+                <p>꺼멍식당</p>
+                <div class="review_star"><span></span> <span>4.8</span> <span>(1,519)</span></div>
+              </div>
+              <p class="Description">서귀포시 특별자치도, 이어도로 338</p>
+              <p class="review_text">첫 제주 가족여행으로 오게 되었어요. 숙소 근처에서 흑돼지구이 저녁식사를 하고 싶었는데 마침 딱 가까이 식당이 있어서 방문했는데 분위기도 너무 좋고
+                고기도 다 맛있게 구워주셔서 너무 편하게 잘 먹었어요</p>
+            </div>
+          </div>
+
+          <div class="r_r_list" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="100">
+            <a href="#">
+              <figure><img src="source/sub04/review02.png" alt="서귀피안 베이커리"></figure>
+            </a>
+            <div class="right_text">
+              <div class="r_r_name_area">
+                <p>서귀피안 베이커리</p>
+                <div class="review_star"><span></span> <span>4.6</span> <span>(1,089)</span></div>
+              </div>
+              <p class="Description">서귀포시 성산읍 신양로122번길 17 2F</p>
+              <p class="review_text">커피가 정말 고소하고, 원두의 신선도가 높은 것 같습니다. 빵도 종류가 진짜 많고, 엄청 맛있어요. 또한 바닷가가 보이는 뷰 맛집이라서 정말
+                만족스럽게 쉬다 올수 있는 공간입니다.</p>
+            </div>
+          </div>
+
+          <div class="r_r_list" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="200">
+            <a href="#">
+              <figure><img src="source/sub04/review03.png" alt="해왓"></figure>
+            </a>
+            <div class="right_text">
+              <div class="r_r_name_area">
+                <p>해왓</p>
+                <div class="review_star"><span></span> <span>4.5</span> <span>(922)</span></div>
+              </div>
+              <p class="Description">서귀포시 특별자치도, 성산읍 신고로 30-1</p>
+              <p class="review_text">제주도 성산읍에서 깔끔하고 정갈한 식사를 원하신다면 해왓 꼭 추천드려요! 저는 어머니와 동생들과 함께 갈치 조림과 모듬물회를 먹었는데요, 칼치 조림은
+                정말 간이 딱 맞고 살이 부드러워 밥 한 공기 뚝딱 먹었네요! 모듬물회는 신선한 회가 가득 들어 있고, 육수도 깔끔해서 속까지 시원했어요.… </p>
+            </div>
+          </div>
+
+          <div class="r_r_list" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="200">
+            <a href="#">
+              <figure><img src="source/sub04/review04.png" alt="제주로운청해원"></figure>
+            </a>
+            <div class="right_text">
+              <div class="r_r_name_area">
+                <p>제주로운청해원</p>
+                <div class="review_star"><span></span> <span>4.6</span> <span>(757)</span></div>
+              </div>
+              <p class="Description">서귀포시 특별자치도, 성산읍 신양로 101</p>
+              <p class="review_text">갈치조림이 맛있었던 제주로운청해원 성산에서 갈치조림 먹고싶을 때 가기 좋은 곳이에요. 반찬도 다양하게 나오고 갈치조림도 양념이 맛있었어요.
+                성게미역국이랑 옥돔구이까지 구성이 좋아요. 옥돔구이도 바삭하고 촉촉해서 좋아요. 밥도 솥밥이라 좋습니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 추천 테마 식당 -->
+
+    <section class="recommend">
+      <h2 data-aos="fade-up" data-aos-duration="1600"><span>제주담다픽</span> 테마 맛집 추천</h2>
+      <p data-aos="fade-up" data-aos-duration="1600" data-aos-delay="200">분위기가 좋은 감성 맛집 리스트</p>
+      <div class="inner" data-aos="fade-up" data-aos-duration="1600">
+        <div class="recom ls1">
+          <div class="text_box">
+            <span class="intro">분위기가 아름다운 감성 브런치 맛집</span>
+            <div class="recom_name">
+              <p>당당</p>
+              <div class="recom_star"><span></span> <span>4.5</span> <span>(922)</span></div>
+            </div>
+            <p class="address">제주시 애월읍 신엄리 1212-1</p>
+            <strong>REVIEW</strong>
+            <div class="review_box">
+              <p class="review">수플레가 정말 부드러워서 좋았습니다! 스프 또한 진해서 부드럽게 넘길 수 있어 만족스러운 식사였습니다</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="recom ls2">
+          <div class="text_box">
+            <span class="intro">오션뷰로 눈도 즐겁고 맛도 즐거운 <br>
+              수제 버거 맛집</span>
+            <div class="recom_name">
+              <p>하하호호</p>
+              <div class="recom_star"><span></span> <span>4.3</span> <span>(1,104)</span></div>
+            </div>
+            <p class="address">제주시 우도면 우도해안길 532</p>
+            <strong>REVIEW</strong>
+            <div class="review_box">
+              <p class="review">친구들과 우도여행 중 방문한 하하호호 햄버거집 예전부터 한번 가보고 싶었던 곳인데 드디어 방문 <br>
+              음식도 맛있고 해안도로 바로옆이라 가게앞 뷰도 미쳤다 <br>
+              다행히 만석은 아니었지만 주문 순서 때문에 캐치테이블 등록 후 입장 음식이 나오기까지는 20분쯤 걸렸다</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="recom ls3">
+          <div class="text_box">
+            <span class="intro">제주도만의 건강하고 신선한 재료를 <br>
+사용하는 스시 오마카세</span>
+            <div class="recom_name">
+              <p>하찌</p>
+              <div class="recom_star"><span></span> <span>4.7</span> <span>(120)</span></div>
+            </div>
+            <p class="address">서귀포시 호근남로 180</p>
+            <strong>REVIEW</strong>
+            <div class="review_box">
+              <p class="review">몇년만의 제주 여행에서 찾은 맘에든 맛집. 음식이 신선하고 입에 착착 감기는 맛이였어요   정돈된 실내도 아늑하고 사장님이 직접 가꾼다는 꽃나무 정원도 넘 좋았어요   담에 또 들르겠습니다~</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="recom ls4">
+          <div class="text_box">
+            <span class="intro">뷰가 아름다운 한담 해안 산책로 카페</span>
+            <div class="recom_name">
+              <p>몽상</p>
+              <div class="recom_star"><span></span> <span>3.7</span> <span>(2,742)</span></div>
+            </div>
+            <p class="address">제주시 애월읍 애월로1길 25-4</p>
+            <strong>REVIEW</strong>
+            <div class="review_box">
+              <p class="review">바다보면서 커피마시기 굉장히 좋고 몽상드 프로젝트라고 구역이3개나눠져잇는데 3개다 모두 이쁘고 위치도 아주좋습니다 주차도좋아요 커피는 사람이하도많아서 조금걸리지만 바다보느라 시간가는줄몰라요</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- 푸터 ======================================  -->
+    <footer>
+      <div class="inner">
+        <div class="footer_left">
+          <img src="source/img_footer_logo.png" alt="로고">
+          <p>제주 여행의 모든 것을 한곳에 담다</p>
+          <p class="notice">© 2025 제주담다. All rights reserved. <br>
+            ※ 본 프로젝트에 사용된 브랜드, 이미지 외 저작권이 있는 모든 요소들은 원저작권자에게 귀속됩니다.
+          </p>
+        </div>
+        <div class="footer_right">
+          <p>제주관광정보센터 TEL </p>
+          <p class="tell">(064)740-6000</p>
+          <span>평일 09:00~18:00 (토·일요일, 공휴일 휴무)</span>
+          <div class="icon_box">
+            <a href="https://www.instagram.com/visitjeju.kr/#" target="_blank"><img src="source/ico_footer01.png"
+                alt="인스타"></a>
+            <a href="https://www.youtube.com/c/visitjeju" target="_blank"><img src="source/ico_footer02.png"
+                alt="유튜브"></a>
+            <a href="https://www.facebook.com/visitjeju.kr" target="_blank"><img src="source/ico_footer03.png"
+                alt="페이스북"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+
+  <!-- aos -->
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

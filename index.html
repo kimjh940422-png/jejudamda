@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제주담다</title>
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="source/favicon/favicon2.png">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+  <!-- aos css-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- js -->
+  <script src="js/jquery-3.7.1.min.js" defer></script>
+  <script src="js/jquery-ui.min.js" defer></script>
+  <script src="js/jejudamda.js" defer></script>
+
+  <!-- aos js -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- 스와이퍼 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="js/jejudamda_swiper.js" defer></script>
+
+</head>
+
+<body>
+  <!-- 로딩화면 -->
+  <div id="loading">
+    <div>
+      <p>
+        <img src="source/img_loading.png" alt="로딩중">
+      </p>
+    </div>
+  </div>
+
+  <div id="wrap">
+
+    <div class="scroll_top"><a href="#"><img src="source/scroll_top.png" alt="상단으로"></a></div>
+
+    <header>
+      <div class="head_notice">
+        <img src="source/ico_notice.png" alt="공지사항">
+        <p>휴가철 물놀이 안전 수칙 안내</p>
+        <img src="source/ico_close.png" alt="닫기" class="close">
+      </div>
+      <div class="inner">
+        <h1><a href="#"><span class="blind">제주담다로고</span></a></h1>
+        <ul class="nav">
+          <li><a href="sub01.html">제주이야기</a></li>
+          <li><a href="sub02.html">자연을 담다</a></li>
+          <li><a href="sub03.html">즐거움을 담다</a></li>
+          <li><a href="sub04.html">맛을 담다</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main_bg">
+      <video muted loop autoplay class="bg_video">
+        <source src="source/vid_main_bg.mp4" type="video/mp4">
+      </video>
+      <div class="video_dim"></div>
+      <div class="main_bg_text">
+        <p>혼저 옵서예, <br>
+          제주를 가득담은 이곳에</p>
+        <div class="date_info">
+          <p class="date"></p>
+          <div id="forecast-container">
+            <span>35℃</span>
+            <span>맑음</span>
+            <img src="source/weather_sunny.png" alt="맑음">
+          </div>
+        </div>
+        <form action="" class="input_box">
+          <input type="search" placeholder="주변관광지검색하기">
+          <button type="submit">
+            <img src="source/ico_mynaui_search.png" alt="검색">
+          </button>
+        </form>
+      </div>
+      <div class="scroll_icon"><img src="source/ico_iconamoon_mouse-light.png" alt=""><span>scroll</span></div>
+    </main>
+
+    <!-- 배너 슬라이드 ==================================== -->
+    <section class="banner">
+      <div class="inner">
+        <div class="swiper banner-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="source/img_festival01.png" alt="금토금토새연쇼">
+              <div class="banner_text">
+                <p>금토금토 새 연 쇼</p>
+                <p>2025. 7. 25.(금) ~ 10월 매주 금·토 19시</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="source/img_festival02.png" alt="제주 플로깅">
+              <div class="banner_text">
+                <p>제주 플로깅</p>
+                <p>2025. 6. 16.(월) ~ 11.30(일)</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="source/img_festival03.png" alt="서귀포 원도심 문화 페스티벌">
+              <div class="banner_text">
+                <p>서귀포 원도심 문화 페스티벌</p>
+                <p>2025. 7. 27.(금) ~ 11.30(일)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="festival_info">
+          <p>축제를 <br>
+            소개해드려요</p>
+          <img src="source/img_character.png" alt="">
+          <div class="btn_wrap">
+            <div class="swiper-button-prev"></div>
+            <button class="autoplay-toggle"></button>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- section2 - 상세페이지 소개 비디오 =====================-->
+
+    <section class="video_wrap">
+      <article class="active">
+        <video loop muted autoplay>
+          <source src="source/sub01.mp4" type="video/mp4">
+        </video>
+        <div class="video_dim"></div>
+        <h3><span>제주 </span>이야기</h3>
+        <p>바람과 돌, 그리고 사람의 섬</p>
+        <a href="sub01.html" class="btnNav"><span>자세히 보기</span></a>
+      </article>
+
+      <article>
+        <video loop muted autoplay>
+          <source src="source/sub02.mp4" type="video/mp4">
+        </video>
+        <div class="video_dim"></div>
+        <h3><span>자연을 </span>담다</h3>
+        <p>계절마다 다른 얼굴을 가진 제주</p>
+        <a href="sub02.html" class="btnNav"><span>자세히 보기</span></a>
+      </article>
+
+      <article>
+        <video loop muted autoplay>
+          <source src="source/sub04.mp4" type="video/mp4">
+        </video>
+        <div class="video_dim"></div>
+        <h3><span>즐거움을 </span>담다</h3>
+        <p>제주에서만 만나는 특별한 하루</p>
+        <a href="sub03.html" class="btnNav"><span>자세히 보기</span></a>
+      </article>
+
+      <article>
+        <video loop muted autoplay>
+          <source src="source/sub03.mp4" type="video/mp4">
+        </video>
+        <div class="video_dim"></div>
+        <h3><span>맛을 </span>담다</h3>
+        <p>섬이 건네는 한 입의 행복</p>
+        <a href="sub04.html" class="btnNav"><span>자세히 보기</span></a>
+      </article>
+
+    </section>
+
+    <!-- 제주 정보 아이콘 리스트 =============================== -->
+    <section class="info_ico">
+      <div class="inner">
+
+        <a href="https://bus.jeju.go.kr/" target="_blank">
+          <div class="info_list">
+            <p>교통정보</p>
+            <p>제주 시내의 <br>
+              대중 교통 이용안내를 <br>
+              빠르게 도와드립니다.</p>
+            <img src="source/ico_bus.png" alt="교통안내">
+          </div>
+        </a>
+
+        <a href="https://www.visitjeju.net/kr/tourInfo/inquiry?tap=one&menuId=DOM_000001703002001001#" target="_blank">
+          <div class="info_list">
+            <p>안내소</p>
+            <p>편안한 제주여행을 위해 <br>
+              제주관광정보센터를 <br>
+              운영하고 있습니다.</p>
+            <img src="source/ico_chat.png" alt="안내소">
+          </div>
+        </a>
+
+        <a href="https://www.visitjeju.net/kr/tourInfo/guide?tap=two&menuId=DOM_000002000000000051#" target="_blank">
+          <div class="info_list">
+            <p>관광지도</p>
+            <p>제주 전역의 명소와 <br>
+              길을 한눈에 볼 수 있는 <br>
+              관광지도를 제공합니다.</p>
+            <img src="source/ico_map.png" alt="관광지도">
+          </div>
+        </a>
+
+        <a href="https://www.jejudfs.com/" target="_blank">
+          <div class="info_list">
+            <p>온라인면세점</p>
+            <p>제주 여행 전, <br>
+              다양한 상품을 온라인에서 <br>
+              미리 구매하실 수 있습니다.</p>
+            <img src="source/ico_cart.png" alt="온라인면세점">
+          </div>
+        </a>
+
+
+      </div>
+    </section>
+
+
+    <!-- 이벤트 슬라이드 ============================== -->
+    <section class="event_slide">
+      <div class="swiper eventSlide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide event01">
+            <a href="https://vpass.co.kr/www/tour/search_view.html?pno=9928" target="_blank">
+              <div class="text_box">
+                <p>제주여행? 제주 올패스 하나면 끝!!!</p>
+                <strong>제주 올패스</strong>
+                <p>다양한 테마파크/카페/액티비티 <br>
+                  모두 모여있다!</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide event02">
+            <a href="https://vjeju.vpass.co.kr/www/tour/search_view.html?tg_no=5987" target="_blank">
+              <div class="text_box">
+                <p>온라인 예약 특가!</p>
+                <strong>제주 산방산 유람선</strong>
+                <p>천혜의 비경을 간직한 산방산과 용머리 해안을 따라서 올레 10코스 해안선을 운항!</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide event03">
+            <a href="https://vpass.co.kr/www/tour/search_view.html?tg_no=5847" target="_blank">
+              <div class="text_box">
+                <p>깜짝 특가!! 최대 50% 할인 혜택</p>
+                <strong>제주 감귤카트</strong>
+                <p>CRAZY RACING TANGERINE KART</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+    <!-- 제주의 색 ======================================== -->
+    <section class="jeju_color">
+      <div class="jeju_color_bg">
+        <div class="inner">
+          <p>담아두고 싶은 그 길 위에서</p>
+          <h3>순간을 담다, <br>
+            <span>제주</span>의 색으로
+          </h3>
+          <div class="insta_post post01" data-aos="fade-up" data-aos-duration="700">
+            <figure>
+              <a href="https://www.instagram.com/visitjeju.kr/#" target="_blank"><img src="source/img_jejucolor01.png"
+                  alt="유채 꽃밭에서"></a>
+              <img src="source/ico_insta.png" alt="인스타로고" class="insta">
+              <img src="source/ico_jejucolor.png" alt="아이콘들" class="icon">
+            </figure>
+            <p>유채 꽃밭에서🎀</p>
+            <p>#제주 #제주담다</p>
+          </div>
+
+          <div class="insta_post post02" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
+            <figure>
+              <a href="https://www.instagram.com/visitjeju.kr/#" target="_blank"><img src="source/img_jejucolor02.png"
+                  alt="천지연 폭포"></a>
+              <img src="source/ico_insta.png" alt="인스타로고" class="insta">
+              <img src="source/ico_jejucolor.png" alt="아이콘들" class="icon">
+            </figure>
+            <p>천지연 폭포✨</p>
+            <p>#제주 #제주담다</p>
+          </div>
+
+          <div class="insta_post post03" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+            <figure>
+              <a href="https://www.instagram.com/visitjeju.kr/#" target="_blank"><img src="source/img_jejucolor03.png"
+                  alt="제주에서 자유를 누리다"></a>
+              <img src="source/ico_insta.png" alt="인스타로고" class="insta">
+              <img src="source/ico_jejucolor.png" alt="아이콘들" class="icon">
+            </figure>
+            <p>제주에서 자유를 누리다!</p>
+            <p>#제주 #제주담다</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- footer =================================== -->
+
+    <footer>
+      <div class="inner">
+        <div class="footer_left">
+          <img src="source/img_footer_logo.png" alt="로고">
+          <p>제주 여행의 모든 것을 한곳에 담다</p>
+          <p class="notice">© 2025 제주담다. All rights reserved. <br>
+            ※ 본 프로젝트에 사용된 브랜드, 이미지 외 저작권이 있는 모든 요소들은 원저작권자에게 귀속됩니다.
+          </p>
+        </div>
+        <div class="footer_right">
+          <p>제주관광정보센터 TEL </p>
+          <p class="tell">(064)740-6000</p>
+          <span>평일 09:00~18:00 (토·일요일, 공휴일 휴무)</span>
+          <div class="icon_box">
+            <a href="https://www.instagram.com/visitjeju.kr/#" target="_blank"><img src="source/ico_footer01.png"
+                alt="인스타"></a>
+            <a href="https://www.youtube.com/c/visitjeju" target="_blank"><img src="source/ico_footer02.png"
+                alt="유튜브"></a>
+            <a href="https://www.facebook.com/visitjeju.kr" target="_blank"><img src="source/ico_footer03.png"
+                alt="페이스북"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+  </div>
+
+  <!-- aos -->
+  <script>
+    AOS.init();
+  </script>
+
+
+</body>
+
+</html>
